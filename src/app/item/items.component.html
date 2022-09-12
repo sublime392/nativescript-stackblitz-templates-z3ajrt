@@ -1,11 +1,13 @@
 <ActionBar title="My App"> </ActionBar>
 
-<GridLayout rows='*' columns="*">
-  <GridLayout #cameraOverlay class="camera-overlay" 
-  [ngClass]="{'rotate90': currentOrientation === 'portrait'}"
-  row="0"
-  rows="*, *, *, *, *"
-  columns="*, *, *, *, *">
-  <Label row="2" col="2" text="hello"></Label>
+<GridLayout rows="*" columns="*">
+  <GridLayout
+    #cameraOverlay
+    class="camera-overlay"
+    row="0"
+    rows="*, *, *, *, *"
+    columns="*, *, *, *, *"
+  >
+    <Label row="2" col="2" text="hello"></Label>
   </GridLayout>
 </GridLayout>
