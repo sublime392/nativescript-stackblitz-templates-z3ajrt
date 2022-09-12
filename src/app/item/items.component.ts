@@ -65,5 +65,7 @@ export class ItemsComponent implements OnInit {
     }, 3000);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.handleOrientationChange(null);
+  }
 }
